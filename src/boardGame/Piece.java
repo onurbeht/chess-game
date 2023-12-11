@@ -7,6 +7,7 @@ public class Piece {
     //Constructor
     public Piece(Board board) {
         this.board = board;
+        this.position = null;
     }
 
     //Métodos
