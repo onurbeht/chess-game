@@ -66,7 +66,7 @@ public class UI {
             System.out.println("CHECKMATE!!!");
             System.out.print("WINNER: ");
             System.out.print((chessMatch.getCurrentPlayer().equals(Color.WHITE)) ? ANSI_WHITE : ANSI_BLACK);
-            System.out.println("Waiting player: " + chessMatch.getCurrentPlayer() + ANSI_RESET);
+            System.out.println(chessMatch.getCurrentPlayer() + ANSI_RESET);
 
         }
 
