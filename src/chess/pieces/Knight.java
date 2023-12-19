@@ -11,6 +11,7 @@ public class Knight extends ChessPiece {
         super(board, color);
     }
 
+    @Override
     public String toString() {return "H";}
 
     @Override
