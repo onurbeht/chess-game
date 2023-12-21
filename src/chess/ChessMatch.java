@@ -5,8 +5,8 @@ import boardgame.Piece;
 import boardgame.Position;
 import chess.pieces.*;
 
-import java.security.InvalidParameterException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -118,7 +118,7 @@ public class ChessMatch {
             throw new IllegalStateException("There is no piece to be promoted");
         }
         if(!type.equals("B") && !type.equals("Q") && !type.equals("H") && !type.equals("R")) {
-            throw new InvalidParameterException("Invalid type of promotion");
+            throw new InputMismatchException("Invalid type of promotion");
         }
 
         Position pos = promoted.getChessPosition().toPosition();
